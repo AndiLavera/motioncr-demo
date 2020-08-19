@@ -33,6 +33,7 @@ class Connection {
       })
 
       this.channel.on('blah', function (payload) {
+        debugger
         console.log(payload)
       })
 

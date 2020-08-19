@@ -15,9 +15,9 @@ abstract class MainLayout < Motion::Base
 
       js_link "/dist/main.bundle.js"
 
-      if Amber.settings.auto_reload?
-        js_link "/js/client_reload.js"
-      end
+      # if Amber.settings.auto_reload?
+      #   js_link "/js/client_reload.js"
+      # end
     end
     view.to_s
   end
