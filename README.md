@@ -1,4 +1,4 @@
-# my-amber-project
+# Motioncr Demo
 
 [![Amber Framework](https://img.shields.io/badge/using-amber_framework-orange.svg)](https://amberframework.org)
 
