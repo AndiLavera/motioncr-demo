@@ -3,7 +3,7 @@ version: '2'
 services:
   app:
     build: .
-    image: my-amber-project
+    image: motioncr-demo
     command: amber watch
     environment:
       DATABASE_URL: postgres://postgres:password@db:5432/my_amber_project_development
@@ -18,7 +18,7 @@ services:
 
   migrate:
     build: .
-    image: my-amber-project
+    image: motioncr-demo
     command: bash -c 'while ! nc -q 1 db 5432 </dev/null; do sleep 1; done && amber db migrate seed'
     environment:
       DATABASE_URL: postgres://postgres:password@db:5432/my_amber_project_development

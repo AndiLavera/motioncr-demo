@@ -10,9 +10,9 @@ watch:
     # commands will be joined with && (join them yourself if need || or ;)
     build_commands:
       - mkdir -p bin
-      - crystal build ./src/my-amber-project.cr -o bin/my-amber-project
+      - crystal build ./src/motioncr-demo.cr -o bin/motioncr-demo
     run_commands:
-      - bin/my-amber-project
+      - bin/motioncr-demo
     include:
       - ./config/**/*.cr
       - ./config/environments/*.yml

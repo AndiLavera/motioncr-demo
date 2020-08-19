@@ -1,6 +1,6 @@
 secret_key_base: S6FYuGI1OlcLvAuhTtX6P0qNHRmKQSG92iJar_nUZLE
 port: 3000
-name: my-amber-project
+name: motioncr-demo
 
 logging:
   severity: debug

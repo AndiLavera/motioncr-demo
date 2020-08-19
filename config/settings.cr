@@ -63,7 +63,6 @@ Amber::Server.configure do |settings|
   # PORT: This is the port that you're application will run on. Examples would be (80, 443, 3000, 8080)
   #
   settings.port = ENV["PORT"].to_i if ENV["PORT"]?
-  app.name = ENV["APP_NAME"] if ENV["APP_NAME"]?
   settings.host = "0.0.0.0"
   settings.redis_url = ENV["REDIS_URL"] if ENV["REDIS_URL"]?
   settings.database_url = ENV["DATABASE_URL"] if ENV["DATABASE_URL"]?

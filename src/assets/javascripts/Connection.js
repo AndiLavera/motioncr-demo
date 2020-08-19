@@ -1,4 +1,4 @@
-require("./amber")
+import Amber from './amber'
 // Encapsulate the cable connection held by the consumer. This is an internal class not intended for direct user manipulation.
 
 const indexOf = [].indexOf
