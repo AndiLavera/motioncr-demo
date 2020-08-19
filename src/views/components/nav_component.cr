@@ -19,10 +19,7 @@ class NavComponent < Motion::Base
             a(class: "nav-link", href: "/form_validation") { text "Form Validation" }
           end
         end
-
-        
       end
     end
-    view.to_s
   end
 end

@@ -1,5 +1,5 @@
 class FormComponent < Motion::Base
-  props map_motion : Bool = true
+  props motion_component : Bool = true
   props changed : Array = Array(String).new
   props is_valid : String = ""
   props sign_up : Signup = Signup.new

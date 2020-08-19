@@ -44,10 +44,6 @@ shards:
     git: https://github.com/crystal-community/future.cr.git
     version: 0.1.0
 
-  garnet_spec:
-    git: https://github.com/amberframework/garnet-spec.git
-    version: 0.2.0
-
   granite:
     git: https://github.com/amberframework/granite.git
     version: 0.21.1
@@ -86,7 +82,7 @@ shards:
 
   motion:
     git: https://github.com/andrewc910/motion.cr.git
-    version: 0.1.0+git.commit.4794c3678b9e2b80f15ef546cb0be1816d6ce3f2
+    version: 0.1.0+git.commit.81b1e918629d34abf79675bb466bf741d3fc8efc
 
   myhtml:
     git: https://github.com/kostya/myhtml.git
@@ -115,10 +111,6 @@ shards:
   redis:
     git: https://github.com/stefanwille/crystal-redis.git
     version: 2.6.0
-
-  selenium:
-    git: https://github.com/paulcsmith/selenium-webdriver-crystal.git
-    version: 0.3.0+git.commit.427376b990dc361702044fa3997ad02de85bf0a7
 
   shell-table:
     git: https://github.com/luckyframework/shell-table.cr.git

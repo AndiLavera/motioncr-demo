@@ -19,7 +19,6 @@ abstract class MainLayout < Motion::Base
       #   js_link "/js/client_reload.js"
       # end
     end
-    view.to_s
   end
 
   abstract def container

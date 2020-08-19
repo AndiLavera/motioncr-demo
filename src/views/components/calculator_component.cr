@@ -4,7 +4,7 @@ class CalculatorComponent < Motion::Base
   props next_number : Bool = false
   props op : String?
   props operand_one : Float = 0.0
-  props map_motion : Bool = true
+  props motion_component : Bool = true
 
   @[Motion::MapMethod]
   def add_char(event : Motion::Event)
