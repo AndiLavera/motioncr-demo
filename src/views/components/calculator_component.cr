@@ -3,7 +3,7 @@ class CalculatorComponent < Motion::Base
   props buffering : Bool = false
   props next_number : Bool = false
   props op : String?
-  props operand_one : Float = 0.0
+  props operand_one : Float64 = 0.0
   props motion_component : Bool = true
 
   @[Motion::MapMethod]

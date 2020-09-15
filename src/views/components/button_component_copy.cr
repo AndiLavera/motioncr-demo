@@ -1,5 +1,4 @@
-class ButtonComponent < Motion::Base
-  include JSON::Serializable
+class ButtonComponentCopy < Motion::Base
   props text_content : String = "Add"
   props count : Int32 = 0
   props motion_component : Bool = true

@@ -1,6 +1,6 @@
 class FormComponent < Motion::Base
   props motion_component : Bool = true
-  props changed : Array = Array(String).new
+  props changed : Array(String) = Array(String).new
   props is_valid : String = ""
   props sign_up : Signup = Signup.new
   props message : String = ""

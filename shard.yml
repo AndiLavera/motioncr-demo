@@ -23,7 +23,7 @@ dependencies:
 
   motion:
     github: andrewc910/motion.cr
-    branch: master
+    version: 0.2.0
 
   granite:
     github: amberframework/granite
