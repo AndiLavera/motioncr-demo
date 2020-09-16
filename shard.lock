@@ -82,7 +82,7 @@ shards:
 
   motion:
     git: https://github.com/andrewc910/motion.cr.git
-    version: 0.2.0
+    version: 0.2.0+git.commit.5badec5758712db3c775dc90b4fc9dec6cbf5f66
 
   myhtml:
     git: https://github.com/kostya/myhtml.git

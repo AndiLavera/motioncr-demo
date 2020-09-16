@@ -23,7 +23,8 @@ dependencies:
 
   motion:
     github: andrewc910/motion.cr
-    version: 0.2.0
+    branch: redis
+    # version: 0.2.0
 
   granite:
     github: amberframework/granite
