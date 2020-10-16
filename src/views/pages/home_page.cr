@@ -1,12 +1,15 @@
 class HomePage < ContainerComponent
   props foo : String = "Default"
 
+  include Amber::Controller::Helpers::Render
+
   def do_something
     foo = "Amber"
   end
 
   def inner
     div do
+      render("ecr/test.ecr", layout: false)
       m(ButtonComponent, count: 10, text_content: "hello")
       h2 "Welcome to #{foo} Framework!"
       para "Thank you for trying out the Amber Framework.  We are working hard to provide a super fast and reliable framework that provides all the productivity tools you are used to without sacrificing the speed."
