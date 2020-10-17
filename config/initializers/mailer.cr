@@ -20,3 +20,12 @@ require "../../src/mailers/**"
 require "motion"
 require "motion/monkey_patch/amber"
 require "../../src/views/components/layouts/main_layout"
+
+Motion.configure do |config|
+  config.adapter = :redis
+  config.redis_url = "redis://localhost:6379/10"
+end
+
+require "redis"
+redis = Redis.new(url: "redis://localhost:6379/10")
+redis.flushdb

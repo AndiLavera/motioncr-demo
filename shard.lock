@@ -74,7 +74,7 @@ shards:
 
   markd:
     git: https://github.com/icyleaf/markd.git
-    version: 0.2.0
+    version: 0.2.1
 
   micrate:
     git: https://github.com/amberframework/micrate.git
@@ -82,11 +82,11 @@ shards:
 
   motion:
     git: https://github.com/andrewc910/motion.cr.git
-    version: 0.1.0+git.commit.81b1e918629d34abf79675bb466bf741d3fc8efc
+    version: 0.2.0+git.commit.7951d2dc89dbb38cd39a0980aef9ec918940cf9d
 
   myhtml:
     git: https://github.com/kostya/myhtml.git
-    version: 1.5.1
+    version: 1.5.2
 
   mysql:
     git: https://github.com/crystal-lang/crystal-mysql.git
@@ -134,7 +134,7 @@ shards:
 
   wordsmith:
     git: https://github.com/luckyframework/wordsmith.git
-    version: 0.2.0
+    version: 0.2.1
 
   yaml_mapping:
     git: https://github.com/crystal-lang/yaml_mapping.cr.git

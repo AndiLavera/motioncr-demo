@@ -17,4 +17,8 @@ class HomeController < ApplicationController
   def form_validation
     render FormValidationPage
   end
+
+  def clock
+    render ClockPage
+  end
 end

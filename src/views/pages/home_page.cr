@@ -1,20 +1,24 @@
 class HomePage < ContainerComponent
-  props foo : String = "Default"
-
   def inner
     div do
-      h2 "Welcome to Amber Framework!"
-      para "Thank you for trying out the Amber Framework.  We are working hard to provide a super fast and reliable framework that provides all the productivity tools you are used to without sacrificing the speed."
+      m(ButtonComponent, count: 10, text_content: "Click Me")
+      h2 "Motioncr Demo"
+      para "Motion is a framework for building reactive, real-time frontend UI components in your Amber application using pure Crystal that are reusable, testable & encapsulated."
+
       div class: "list-group" do
-        a(class: "list-group-item list-group-item-action") { text "Getting Started with Amber Framework" }
-        a(class: "list-group-item list-group-item-action") { text "List of Awesome Crystal projects and shards" }
-        a(class: "list-group-item list-group-item-action") { text "What's hot in Crystal right now" }
+        a(class: "list-group-item list-group-item-action", href: "https://github.com/andrewc910/motion.cr") { text "Getting Started with Motion.cr" }
+        a(class: "list-group-item list-group-item-action", href: "https://andrewc910.github.io/motion.cr/Motion.html") { text "API Documentation" }
       end
-      m(ButtonComponent, text_content: "Add")
+
+      div do
+        para "This periodic timer has been running for ", style: "display: inline;"
+        m(TickerComponent)
+        para " seconds", style: "display: inline;"
+      end
     end
   end
 
   def page_title
-    "A great title"
+    "Motioncr Demo"
   end
 end
