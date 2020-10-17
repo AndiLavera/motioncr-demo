@@ -1,9 +1,29 @@
-$primary: #f4994b;
+$primary: #6f42c1;
+$primary-dark: darken($primary, 20%);
+$light-gray: #f8f9ff;
+$red: #FF4B3E;
 
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  background-color: #F6F9FC;
+}
+
+.logo {
+  text-indent: -9999px;
+  width: 150px;
+  height: 30px;
+  background: url(../images/logo.svg) no-repeat top left;
+  background-size: 150px 30px;
+  fill: white
+}
+
 .main {
   padding-top: 20px;
+}
+
+.nav-link {
+  color: $primary !important;
 }
 
 .calc-grid {
@@ -12,6 +32,7 @@ $primary: #f4994b;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   font-family: Helvetica;
+  background-color: white;
 }
 
 .buffer {
@@ -23,8 +44,8 @@ $primary: #f4994b;
 }
 
 .buffer-area {
-  background-color: #555;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -33,15 +54,94 @@ $primary: #f4994b;
 }
 
 .number-btn {
-  background-color: #CCC;
-}
+  border-radius: 5px;
+  color: $primary;
+  background-color: white;
+  
+  &:hover {
+    background-color: #f2f3f5;
+  }
+} 
 
 .op-btn {
-  background-color: #f5923e;
+  background-color: $primary;
   color: white;
+  border-radius: 5px;
 }
 
 .calc-grid button {
-  border: 1px solid #888;
+  border: none;
   font-size: 2rem;
+}
+
+.clock-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+  opacity: 1;
+
+  .time-display {
+    width: 100%;
+    max-width: 20rem;
+    position: relative;
+    text-align: center;
+  }
+}
+
+.clock {
+  margin-top: 2rem;
+}
+
+.face {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 0.5em solid $primary-dark;
+  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hands {
+  position: absolute;
+  width: 0.25em;
+  height: 9em;
+  margin: auto;
+  top: calc(0px - 9em); // minus height
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $primary;
+  transform-origin: bottom center;
+  z-index: 1;
+  transition: transform 0.25s;
+}
+
+.hour {
+  height: 6em;
+  top: calc(0px - 6em);
+}
+
+.second {
+  height: 9.5em;
+  top: calc(0px - 9.5em); // minus height
+  background: $red;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 100%;
+  background: white;
+  border: 2px solid $primary;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
 }

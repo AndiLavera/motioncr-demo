@@ -4,13 +4,10 @@ class TickerComponent < Motion::Base
 
   @[Motion::PeriodicTimer(interval: 1.second)]
   def tick
-    pp "tick"
     @count += 1
   end
 
   def render
-    div do
-      span @count.to_s
-    end
+    span @count.to_s, style: "display: inline;"
   end
 end

@@ -37,6 +37,7 @@ Amber::Server.configure do
     get "/", HomeController, :index
     get "/calculator", HomeController, :calculator
     get "/form_validation", HomeController, :form_validation
+    get "/clock", HomeController, :clock
     websocket "/cable", ChatSocket
   end
 

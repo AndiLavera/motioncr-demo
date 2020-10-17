@@ -79,32 +79,32 @@ class CalculatorComponent < Motion::Base
   end
 
   def render
-    div class: "calc-grid" do
-      div class: "buffer buffer-area" { text buffer() }
+    div class: "calc-grid shadow" do
+      div class: "buffer buffer-area", style: "box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)" { text buffer() }
 
-      button class: "number-btn", data_motion: "clear" { text "C" }
-      button class: "number-btn", data_motion: "change_sign" { text "+/-" }
-      button class: "number-btn", data_motion: "percent" { text "%" }
-      button class: "op-btn", data_motion: "operation", data_op: "/" { text "÷" }
+      button class: "number-btn m-1", data_motion: "clear" { text "C" }
+      button class: "number-btn m-1", data_motion: "change_sign" { text "+/-" }
+      button class: "number-btn m-1", data_motion: "percent" { text "%" }
+      button class: "op-btn m-1", data_motion: "operation", data_op: "/" { text "÷" }
 
-      button class: "number-btn", data_motion: "add_char", data_char: "7" { text "7" }
-      button class: "number-btn", data_motion: "add_char", data_char: "8" { text "8" }
-      button class: "number-btn", data_motion: "add_char", data_char: "9" { text "9" }
-      button class: "op-btn", data_motion: "operation", data_op: "*" { text "X" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "7" { text "7" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "8" { text "8" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "9" { text "9" }
+      button class: "op-btn m-1", data_motion: "operation", data_op: "*" { text "X" }
 
-      button class: "number-btn", data_motion: "add_char", data_char: "4" { text "4" }
-      button class: "number-btn", data_motion: "add_char", data_char: "5" { text "5" }
-      button class: "number-btn", data_motion: "add_char", data_char: "6" { text "6" }
-      button class: "op-btn", data_motion: "operation", data_op: "-" { text "-" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "4" { text "4" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "5" { text "5" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "6" { text "6" }
+      button class: "op-btn m-1", data_motion: "operation", data_op: "-" { text "-" }
 
-      button class: "number-btn", data_motion: "add_char", data_char: "1" { text "1" }
-      button class: "number-btn", data_motion: "add_char", data_char: "2" { text "2" }
-      button class: "number-btn", data_motion: "add_char", data_char: "3" { text "3" }
-      button class: "op-btn", data_motion: "operation", data_op: "+" { text "+" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "1" { text "1" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "2" { text "2" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "3" { text "3" }
+      button class: "op-btn m-1", data_motion: "operation", data_op: "+" { text "+" }
 
-      button class: "number-btn zero-butto", data_motion: "add_char", data_char: "0" { text "0" }
-      button class: "number-btn", data_motion: "add_char", data_char: "." { text "." }
-      button class: "op-btn", data_motion: "equals" { text "=" }
+      button class: "number-btn zero-button m-1", data_motion: "add_char", data_char: "0" { text "0" }
+      button class: "number-btn m-1", data_motion: "add_char", data_char: "." { text "." }
+      button class: "op-btn m-1", data_motion: "equals" { text "=" }
     end
   end
 end
