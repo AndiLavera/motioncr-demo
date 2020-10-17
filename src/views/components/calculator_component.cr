@@ -1,5 +1,5 @@
 class CalculatorComponent < Motion::Base
-  props buffer : String = ""
+  props buffer : String = "0"
   props buffering : Bool = false
   props next_number : Bool = false
   props op : String?
@@ -80,7 +80,7 @@ class CalculatorComponent < Motion::Base
 
   def render
     div class: "calc-grid shadow" do
-      div class: "buffer buffer-area", style: "box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)" { text buffer() }
+      div class: "buffer buffer-area", style: "box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)" { text buffer }
 
       button class: "number-btn m-1", data_motion: "clear" { text "C" }
       button class: "number-btn m-1", data_motion: "change_sign" { text "+/-" }
